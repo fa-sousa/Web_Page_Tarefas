@@ -10,6 +10,8 @@
         <link href="css/style.css" rel="stylesheet">
         <!-- JavaScript-->
         <script src="js/jquery/dist/jquery.min.js"></script>
+        <script src="js/tablesorter-master/dist/js/jquery.tablesorter.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-light fixed-top bg-light">
@@ -40,13 +42,13 @@
             </form>
         </header>
         <section id="conteudo">
-            <table class="table table-striped">
+            <table id="myTable" class="table table-striped">
                 <thead>
                     <tr>
                     <th scope="col">ID</th>
+                    <th scope="col">Completed</th>
                     <th scope="col">Title</th>
                     <th scope="col">User ID</th>
-                    <th scope="col">Completed</th>
                     </tr>
                 </thead>
         <!-- Todos os itens do <tbody> deverão receber infos da API-->
@@ -112,6 +114,14 @@
                     <td></td>
                     </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Completed</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">User ID</th>
+                    </tr>
+                </tfoot>
             </table>
         </section>
         <footer>
