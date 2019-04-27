@@ -10,7 +10,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light fixed-top bg-light">
             <a class="navbar-brand" href="#">
                 <img src="open_iconic/svg/person.svg" width="30" height="30" class="d-inline-block align-top" alt="">
                 UserName
@@ -20,23 +20,104 @@
             <div class="col-md-6">
                 <h1>LISTA DE TAREFAS</h1>    
             </div>
-            <div class="col-md-6">
-                <ul>
-                    <li>Todas</li>
-                    <li>User Id</li>
-                    <li>Completed</li>
-                </ul>
-            </div>
+            <form>
+                <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Selecionar...</option>
+                        <option value="1">Todos</option>
+                        <option value="2">User ID</option>
+                        <option value="3">Completed</option>
+                    </select>
+                    </div>
+                    <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-secondary">Filtrar</button>
+                    </div>
+                </div>
+            </form>
         </header>
         <section id="conteudo">
-            Conteúdo
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">User ID</th>
+                    <th scope="col">Completed</th>
+                    </tr>
+                </thead>
+<!-- Todos os itens do <tbody> deverão receber infos da API-->
+                <tbody>
+                    <tr>
+                    <th scope="row">1</th>
+                    <td>1</td>
+                    <td>delectus aut autem</td>
+                    <td>false</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">4</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">5</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">6</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">7</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">8</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">9</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">10</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-    <footer>
-        <div class="container">
-        <div class="col-md-12">
-            <p class="text-center">&copy; Tasks List 2019</p>
-        </div>
-        </div>
-    </footer>
+        <footer>
+            <div class="container">
+            <div class="col-md-12">
+                <p class="text-center">&copy; Tasks List 2019</p>
+            </div>
+            </div>
+        </footer>
     </body>
 </html>
