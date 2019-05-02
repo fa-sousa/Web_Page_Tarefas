@@ -1,8 +1,12 @@
 const porta = 3003
 
 const express = require('express')
+const bodyParser = require('body-parser')
 const app = express()
 const bancoDeDados = require('./bancoDeDados')
+
+//padrão de envio dos dados
+app.use(bodyParser.urlencoded({extended: true}))
 
 //testando requisições com postman
 app.get('/tarefas', (req, res, next) => {
