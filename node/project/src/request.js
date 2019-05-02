@@ -1,4 +1,4 @@
-const request = require ('request');
+import request from 'request';
 
 _EXTERNAL_URL = 'https://jsonplaceholder.typicode.com/todos';
 
@@ -11,4 +11,4 @@ const callExternalApiUsingRequest = (callback) => {
     });
 }
 
-module.exports.callApi = callExternalApiUsingRequest;
+export const callApi = callExternalApiUsingRequest;
