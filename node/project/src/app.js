@@ -6,7 +6,7 @@ const http = require('http')
 http.createServer((req, res) => {
     if(req.url === "/request"){
         apiCallFromRequest.callApi(function(response){
-            res.write(JSON.stringify(response));
+            res.write('index.html');
             res.end();
         });
     }

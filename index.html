@@ -20,27 +20,19 @@
                 UserName
             </a>
         </nav>
-        <header>
-            <div class="col-md-6 col-sm-6">
-                <h1>LISTA DE TAREFAS</h1>    
+    <header>
+        <div class="col-md-6 col-sm-6">
+            <h1>LISTA DE TAREFAS</h1>    
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Selecionar</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Todas</a>
+                <a class="dropdown-item" href="#">UserId</a>
+                <a class="dropdown-item" href="#">Completed</a>
             </div>
-            <form>
-                <div class="form-row align-items-center">
-                    <div class="col-auto my-1">
-                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Selecionar...</option>
-                        <option value="1">Todos</option>
-                        <option value="2">User ID</option>
-                        <option value="3">Completed</option>
-                    </select>
-                    </div>
-                    <div class="col-auto my-1">
-                        <button type="submit" class="btn btn-secondary">Filtrar</button>
-                    </div>
-                </div>
-            </form>
-        </header>
+        </div>
+    </header>
         <section id="conteudo">
             <table id="myTable" class="table table-striped">
                 <thead>

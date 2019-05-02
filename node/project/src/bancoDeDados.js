@@ -1,4 +1,4 @@
-const sequence = {
+/*const sequence = {
     _id:1,
     get id() { return this._id++}
 }
@@ -19,4 +19,4 @@ function getTarefas() {
     return Object.values(tarefas)
 }
 
-module.exports = {salvarTarefa, getTarefa, getTarefas}
+module.exports = {salvarTarefa, getTarefa, getTarefas}*/

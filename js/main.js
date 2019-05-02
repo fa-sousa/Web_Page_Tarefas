@@ -4,3 +4,8 @@ $(function() {
 });
 
 
+
+//função para ordenar os itens da tabela
+$(function() {
+  $('.dropdown-toggle').dropdown();
+});
