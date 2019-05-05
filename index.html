@@ -12,6 +12,7 @@
         <script src="js/jquery/dist/jquery.min.js"></script>
         <script src="js/tablesorter-master/dist/js/jquery.tablesorter.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/request.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-light fixed-top bg-light">
@@ -37,8 +38,8 @@
             <table id="myTable" class="table table-striped">
                 <thead>
                     <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Completed</th>
+                    <th scope="col" >ID</th>
+                    <th scope="col" >Completed</th>
                     <th scope="col">Title</th>
                     <th scope="col">User ID</th>
                     </tr>
@@ -46,64 +47,53 @@
         <!-- Todos os itens do <tbody> deverão receber infos da API-->
                 <tbody>
                     <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>delectus aut autem</td>
-                    <td>false</td>
+                    <td></td>
+                    <td id="id"></td>
+                    <td></td>
+                    <td id="completed"></td>
+                    <td></td>
+                    <td id="title"></td>
+                    <td></td>
+                    <td id="userid"></td>
                     </tr>
                     <tr>
-                    <th scope="row">2</th>
                     <td></td>
+                    <td id="id"></td>
                     <td></td>
+                    <td id="completed"></td>
                     <td></td>
+                    <td id="title"></td>
+                    <td></td>
+                    <td id="userid"></td>
                     </tr>
                     <tr>
-                    <th scope="row">3</th>
                     <td></td>
+                    <td id="id"></td>
                     <td></td>
+                    <td id="completed"></td>
                     <td></td>
+                    <td id="title"></td>
+                    <td></td>
+                    <td id="userid"></td>
                     </tr>
                     <tr>
-                    <th scope="row">4</th>
                     <td></td>
+                    <td id="id"></td>
                     <td></td>
+                    <td id="completed"></td>
                     <td></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">5</th>
+                    <td id="title"></td>
                     <td></td>
+                    <td id="userid"></td>
+                    </tr><tr>
                     <td></td>
+                    <td id="id"></td>
                     <td></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">6</th>
+                    <td id="completed"></td>
                     <td></td>
+                    <td id="title"></td>
                     <td></td>
-                    <td></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">7</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">8</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">9</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">10</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="userid"></td>
                     </tr>
                 </tbody>
                 <tfoot>
