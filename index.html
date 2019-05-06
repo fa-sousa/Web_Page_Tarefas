@@ -8,9 +8,11 @@
         <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
         <!-- CSS -->
         <link href="css/style.css" rel="stylesheet">
+        <link href="js/dataTables/media/css/jquery.dataTables.min.css">
         <!-- JavaScript-->
-        <script src="js/jquery/dist/jquery.min.js"></script>
-        <script src="js/tablesorter-master/dist/js/jquery.tablesorter.js"></script>
+        <script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/dataTables/media/js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables/media/js/dataTables.bootstrap4.js"></script>
         <script src="js/main.js"></script>
         <script src="js/request.js"></script>
     </head>
@@ -21,89 +23,21 @@
                 UserName
             </a>
         </nav>
-    <header>
-        <div class="col-md-6 col-sm-6">
+        <header>
             <h1>LISTA DE TAREFAS</h1>    
-        </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Selecionar</button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Todas</a>
-                <a class="dropdown-item" href="#">UserId</a>
-                <a class="dropdown-item" href="#">Completed</a>
-            </div>
-        </div>
-    </header>
+        </header>
         <section id="conteudo">
             <table id="myTable" class="table table-striped">
                 <thead>
                     <tr>
-                    <th scope="col" >ID</th>
-                    <th scope="col" >Completed</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">User ID</th>
+						<th scope="col">ID</th>
+						<th scope="col">Title</th>
+						<th scope="col">Completed</th>
+						<th scope="col">User ID</th>
                     </tr>
                 </thead>
         <!-- Todos os itens do <tbody> deverão receber infos da API-->
-                <tbody>
-                    <tr>
-                    <td></td>
-                    <td id="id"></td>
-                    <td></td>
-                    <td id="completed"></td>
-                    <td></td>
-                    <td id="title"></td>
-                    <td></td>
-                    <td id="userid"></td>
-                    </tr>
-                    <tr>
-                    <td></td>
-                    <td id="id"></td>
-                    <td></td>
-                    <td id="completed"></td>
-                    <td></td>
-                    <td id="title"></td>
-                    <td></td>
-                    <td id="userid"></td>
-                    </tr>
-                    <tr>
-                    <td></td>
-                    <td id="id"></td>
-                    <td></td>
-                    <td id="completed"></td>
-                    <td></td>
-                    <td id="title"></td>
-                    <td></td>
-                    <td id="userid"></td>
-                    </tr>
-                    <tr>
-                    <td></td>
-                    <td id="id"></td>
-                    <td></td>
-                    <td id="completed"></td>
-                    <td></td>
-                    <td id="title"></td>
-                    <td></td>
-                    <td id="userid"></td>
-                    </tr><tr>
-                    <td></td>
-                    <td id="id"></td>
-                    <td></td>
-                    <td id="completed"></td>
-                    <td></td>
-                    <td id="title"></td>
-                    <td></td>
-                    <td id="userid"></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Completed</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">User ID</th>
-                    </tr>
-                </tfoot>
+                <tbody id="items-container"></tbody>
             </table>
         </section>
         <footer>
