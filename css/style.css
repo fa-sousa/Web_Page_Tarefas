@@ -3,9 +3,14 @@ h1{
     margin-top: 8px;
     text-align: center;
 }
-.tablesorter-pager .btn-group-sm .btn {
-    font-size: 1.2em; 
-}  
+header{
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+}
+#myTable th{
+    cursor: pointer;
+}
 .container{
     display: flex;
     width: 100%;
