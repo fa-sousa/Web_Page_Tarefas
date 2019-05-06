@@ -5,7 +5,6 @@ var HttpClient = function(){
         url: "https://jsonplaceholder.typicode.com/todos",
         method: "GET",
         dataType: 'json',
-        timeout: 60000,
         success: function(data) {
           console.log(data);
         
